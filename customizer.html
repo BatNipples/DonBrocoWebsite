@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Don Broco | Customizer</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/css_index.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/js_canvas.js"></script>
+</head>
+<body>
+	<div id="siteWrapper">
+	<div id="mobileNav">
+		<a id="closebtn">&times;</a>
+		<div id="mobileNav-content">
+			<a class="mobileNavOption" data-nav="1">Home</a>
+			<a class="mobileNavOption" data-nav="2">Albums</a>
+			<a class="mobileNavOption" data-nav="3">Customizer</a>
+			<a class="mobileNavOption" data-nav="4">Report</a>
+		</div>
+	</div>
+	<section id="headerBar">
+		<nav id="navContainer">
+			<ul id="navMenu">
+				<li class="navOption" data-nav="1">Home</li>
+				<li class="navOption" data-nav="2">Customizer</li>
+				<li class="navOption" data-nav="3">Report</li>
+			</ul>
+			<nav id = "mobileButton" class="navItem"></nav>
+		</nav>
+	</section>
+	<section id="canvasWrapper">
+		<canvas id="canvas"></canvas>
+		<form id="canvasOptions">
+				<span  class="canvasInput">line size:<input type="range" id="line_size" min="1" max="20"></span>
+				<span  class="canvasInput">line colour:<input type="color" id="line_color"></span>
+				<span  class="canvasInput" id="eraser">eraser:</span>
+		</form>
+	</section>
+	
+	</div>
+</body>
+</html>

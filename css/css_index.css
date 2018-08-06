@@ -1,0 +1,399 @@
+body {
+	background-color:black;
+	margin:0;
+	padding:0;
+	color:white;
+	font-size:16px;
+	font-family: 'Ubuntu',sans-serif;
+	
+}
+
+#siteWrapper {
+	margin-left:15%;
+	margin-right:15%;
+	Background-color:#666666;
+	width:70%;
+	height:100%;
+}
+
+#headerBar {
+	background-color:#ffcb5b;
+	height:3.75em;
+}
+
+.subHeader {
+	font-size:2em;
+	line-height:2em;
+	text-align:center;
+	color:black;
+	background-color:#ffcb5b;
+}
+
+#navMenu {
+	margin:0;
+	padding:0;
+}
+
+.navOption {
+	display:inline-block;
+	padding-right:0.75em;
+	padding-left:0.75em;
+	font-size:1.25em;
+	line-height:3em;
+	border-right:solid 5px black;
+	cursor:pointer;
+}
+
+#mobileButton {
+	display:none;
+	background-image: url(../images/nav.png);
+	background-size:3.75em;
+	height:3.75em;
+	width:3.75em;
+	float:right;
+}
+
+#landingWrapper {
+	background-image:url(../images/brocoStage.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:100%;
+	height:calc(100vh - 3.75em);
+}
+
+.logo {
+	position:relative;
+	top:10%;
+	left:25%;
+	box-sizing:border-box;
+	background-image:url(../images/broco_logo3.png);
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	height:12%;
+	width:50%;
+	background-color:rgba(40,40,40,.5);
+	border:outset 3px rgba(40,40,40,.5);
+}
+
+#albumWrapper {
+	width:100%;
+	height:auto;
+}
+
+#albumSelection {
+	background-color:black;
+	text-align:center;
+}
+
+.album {
+	display:inline-block;
+	width:33%;
+	padding-top:calc((((100vh - 4em)/3) - 1em)/2);
+	padding-bottom:calc((((100vh - 4em)/3) - 1em)/2);
+}
+
+#album1 {background-image:url(../images/automaticCover.jpeg);}
+#album2 {background-image:url(../images/automaticCover.jpeg);}
+#album3 {background-image:url(../images/automaticCover.jpeg);}
+
+#albumMedia {
+	height:100%;
+	background-color:black;
+	overflow:hidden;
+}
+
+#albumVideo, #trackWrapper {
+	display:inline-block;
+	text-align:center;
+	box-sizing:border-box;
+	border:solid 1px black;
+}
+
+#albumVideo {
+	float:left;
+	width:66.6%;
+	height:23.8em;
+}
+
+#trackWrapper {
+	width:33.4%;
+	height:auto;
+}
+
+#trackList {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+.track {
+	box-sizing:border-box;
+	border:solid 1px black;
+	background-color:#424242;
+	padding:1em;
+}
+
+#album1, #album2, #album3 {
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+
+#mobileNav {
+	height: 100%;
+    width:0%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#mobileNav-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 1.875px;
+}
+
+#mobileNav a {
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 2.25em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+#reportWrapper, #customizerWrapper {
+	width:100%;
+	height:100vh;
+	text-align:center;
+}
+
+.contentWrapper {
+	height:calc(100vh - 4em);
+}
+
+.subContentWrapper {
+	position:relative;
+	left:5%;
+	top:5%;
+	background-color:white;
+	box-sizing:border-box;
+	border-radius:5em;
+	border:solid 5px black;
+	height:90%;
+	width:90%;
+	overflow:hidden;
+	text-align:center;
+}
+
+.subButton {
+	position:absolute;
+	left:40%;
+	top:75%;
+	width:20%;
+	line-height:3em;
+	box-sizing:border-box;
+	text-decoration:none;
+	background-color:#424242;
+	border:solid 2px black;
+	color:white;
+	-o-transition:.3s;
+	-ms-transition:.3s;
+	-moz-transition:.3s;
+	-webkit-transition:.3s;
+	transition:.3s;
+}
+
+#imageSlideShow {
+	position:relative;
+	top:13%;
+	left:15%;
+	width:70%;
+	height:55%;
+	background-color:white;
+	box-sizing:border-box;
+	border:outset 10px rgba(120,120,120,0.5);
+	background-size:100% 100%;
+	background-image:url(images/brocoStage.png);
+}
+
+.navDot {
+	position:relative;
+	top:15%;
+	cursor:pointer;
+	height:15px;
+	width:15px;
+	margin:0 2px;
+	background-color:#bbb;
+	border-radius:50%;
+	display:inline-block;
+	transition: background-color 0.6s ease;
+}
+
+#canvasWrapper {
+	height:calc(100vh - 3.75em);
+	width:100%;
+}
+
+#canvas {
+	position:relative;
+	top:10%;
+	left:10%;
+	width:80%;
+	height:60%;
+	border:solid 5px black;
+	box-sizing:border-box;
+	background-color:white;
+}
+
+#canvasOptions {
+	position:relative;
+	top:15%;
+	left:10%;
+	width:80%;
+	height:4em;
+	background-color:white;
+	border:solid 5px black;
+	box-sizing:border-box;
+}
+
+.canvasInput {
+	display:inline-block;
+	position:relative;
+	color:black;
+	box-sizing:border-box;
+	border-right:solid 5px black;
+	line-height:3.65em;
+}
+
+#reportWrapper {
+	width:100%;
+	height:100vh;
+	text-align:center;
+}
+
+#reportVideo {
+	position:relative;
+	top:3%;
+	margin:auto;
+	width:60%;
+	height:40%;
+}
+
+#webStandards {
+	position:relative;
+	top:3%;
+	box-sizing:border-box;
+	border:solid 3px black;
+	margin:auto;
+	width:80%;
+	height:auto;
+	background-color:white;
+	color:black;
+}
+
+#validationContainer {
+	position:relative;
+	top:10%;
+	margin:auto;
+	width:80%;
+	height:60%;
+}
+
+
+
+@media only screen and (max-width: 1344px) {
+	#siteWrapper {
+		width:100%;
+		margin-left:0;
+		margin-right:0;
+	}
+	.logo {
+		width:60%;
+		left:20%;
+	}
+}
+
+@media only screen and (max-width:895px) {
+	.album {width:100vw;}
+}
+
+@media only screen and (max-width: 600px) {
+	#mobileButton {display: block;}
+	#navMenu {display:none;}
+	#trackWrapper {
+		width:100%;
+	}
+	.track {
+		float:none;
+		font-size:.8em;
+	}
+	#albumVideo {
+		float:none;
+		width:100%;
+	}
+	.subButton {
+		width:50%;
+		left:25%;
+		top:75%;
+		font-size:0.8em;
+	}
+	.logo {
+		width:70%;
+		left:15%;
+	}
+	#canvas {
+		left:0%;
+		width:100%;
+	}
+}
+
+@media screen and (max-height: 450px) {
+    #mobileNav a {font-size: 1.25em}
+    #mobileNav #closebtn {
+        font-size: 2.5em;
+        top: 1%;
+        right: 10%;
+    }
+}
+
+.navDot:hover {
+	background-color:#ffcb5b;
+}
+
+.track:hover {
+	background-color:#ffcb5b;
+	color:black;
+	cursor:pointer;
+	transition:background-color .4s ease,color .4s ease;
+}
+
+.subButton:hover {
+	background-color:#ffcb5b;
+	color:black;
+}
+
+#mobileNav a:hover, #mobileNav a:focus {
+    color: #ffcb5b;
+	cursor:pointer;
+}
+
+#mobileButton:hover + #mobileNav {
+	cursor:pointer;
+}
+
+.album:hover {
+	cursor:pointer;
+}

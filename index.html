@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<Title> Don Broco | Home </title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/css_index.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/js_index.js"></script>
+</head>
+<body>
+<div id="siteWrapper">
+	<div id="mobileNav">
+		<a id="closebtn">&times;</a>
+		<div id="mobileNav-content">
+			<a class="mobileNavOption" data-nav="1">Home</a>
+			<a class="mobileNavOption" data-nav="2">Albums</a>
+			<a class="mobileNavOption" data-nav="3">Customizer</a>
+			<a class="mobileNavOption" data-nav="4">Report</a>
+		</div>
+	</div>
+	<section id="headerBar">
+		<nav id="navContainer">
+			<ul id="navMenu" class="navItem">
+				<li class="navOption" data-nav="1" >Home</li>
+				<li class="navOption" data-nav="2" >Albums</li>
+				<li class="navOption" data-nav="3" >Customizer</li>
+				<li class="navOption" data-nav="4" >Report</li>
+
+			</ul>
+			<nav id = "mobileButton" class="navItem"></nav>
+		</nav>
+	</section>
+	<div id="landingWrapper">
+		<div class="logo"></div>
+	</div>
+	<section id="albumWrapper">
+		<header class="subHeader">ALBUMS</header>
+		<div id="albumSelection">
+				<div class="album" id="album1">T E C H N O L O G Y</div>
+				<div class="album" id="album2">A U T O M A T I C</div>
+				<div class="album" id="album3">P R I O R I T I E S</div>
+		</div>
+		<div id="albumMedia">
+			<iframe id="albumVideo" src="https://www.youtube-nocookie.com/embed/nL0DRvKaThw?rel=0&amp;showmedia=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<nav id="trackWrapper">
+				<ul id="trackList">
+					<li class="track" id ="track1" data-track="0">Technology</li>
+					<li class="track" id ="track2" data-track="1">Stay Ignorant</li>
+					<li class="track" id ="track3" data-track="2">Come Out To LA</li>
+					<li class="track" id ="track4" data-track="3">Pretty</li>
+					<li class="track" id ="track5" data-track="4">The Blues</li>
+					<li class="track" id ="track6" data-track="5">TightRope</li>
+					<li class="track" id ="track7" data-track="6">Everybody</li>
+				</ul>
+			</nav>
+		</div>	
+	</section>
+	<section id="customizerWrapper">
+		<header class="subHeader">CUSTOMIZER</header>
+		<div class="contentWrapper">
+			<div class="subContentWrapper">
+				<div id="imageSlideShow"></div>
+				<span class="navDot" data-dot="1"></span>
+				<span class="navDot" data-dot="2"></span>
+				<span class="navDot" data-dot="3"></span>
+				<span class="navDot" data-dot="4"></span>
+				<span class="navDot" data-dot="5"></span>
+				<a id="customizerLink" class="subButton" href="customizer.html">Get Drawing!</a>
+			</div>
+		</div>
+	</section>
+	<section id="reportWrapper">
+		<header class="subHeader">REPORT</header>
+		<div class="contentWrapper">
+			<div class="subContentWrapper">
+				<div class="contentImage" id="reportImage"></div>
+				<a id="reportLink" class="subButton" href="report.html">Go To Report</a>
+			</div>
+		</div>
+	</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Don Broco | Report</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/css_index.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/js_report.js"></script>
+
+</head>
+<body>
+	<div id="siteWrapper">
+		<div id="mobileNav">
+			<a id="closebtn">&times;</a>
+			<div id="mobileNav-content">
+				<a class="mobileNavOption" data-nav="1">Home</a>
+				<a class="mobileNavOption" data-nav="2">Albums</a>
+				<a class="mobileNavOption" data-nav="3">Customizer</a>
+				<a class="mobileNavOption" data-nav="4">Report</a>
+			</div>
+		</div>
+	<section id="headerBar">
+		<nav id="navContainer">
+			<ul id="navMenu">
+				<li class="navOption" data-nav="1">Home</li>
+				<li class="navOption" data-nav="2">Customizer</li>
+				<li class="navOption" data-nav="3">Report</li>
+			</ul>
+			<nav id = "mobileButton" class="navItem"></nav>
+		</nav>
+	</section>
+	<section id="reportWrapper">
+			<iframe id="reportVideo" src="https://www.youtube-nocookie.com/embed/tmjhoCAxui8?rel=0&amp;showmedia=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<article id="webStandards">For my website, I had to research and attempt to apply my interpretation of modern web standards to the website’s design process. Language is defined in every document, characters sets are defined, classes are used where appropriate for styling purposes, no inline styles are in the document besides the iframe elements for displaying videos, where I still try to keep the amount of inline styling to an absolute minimum. Each page is linked to a javascript document, a css document and has a menu to connect to any of the other pages. It is important to keep html and css separate so that attribute values can easily be changed when necessary and observed. The separation of the html documents and scripts is also important to avoid conflicts with elements not being loaded correctly and helps keep meta data in the header. Problems can be easily identified and fixed if they are kept separately. I have avoided using tab-index values to prevent software from using the webpage automatically. This is less important for a simple website like this, but it’s good practice. I have developed the website with support for multiple browsers in mind, with 1 or two exceptions of deeply rooted issues I can’t find a solution for in the remaining time of the project, with more time I would have liked to fix the issues. I have stayed away from using css attributes that are not supported by all browsers or have compatibility issues or bugs. I have used primarily simple positioning for all elements, with only 1 instance of using a flex box, when I started making the webpage, I used a flex box for my main header at the top of the page but I had issues when using it on older version of internet explorer which is a large portion of users and decided it was better use of my time to simplify the bar rather than create an exception for older internet explorer versions. The website shapes and scales in relation to window size and scales appropriately on most/all devices apart from a few outliers. Em/vh/vw/% values have been used primarily throughout the website alongside media queries to allow the content to scale appropriately. One of the exceptions to this would be the images in the album section and background images, with more time I would like to create an exception for smaller screen sizes to have the background images become centred with a minimum size so they scale better. I used validation every few days of progress to snuff out issues, such as removing tab indexes from my sections for navigation and instead using  a scrollIntoView js function, finding general syntax errors and improving the structure by including a header within every section. Web standards are important for a few reasons, such as website maintenance, work speed efficiency and backwards compatibility. A very large portion of the world will still be using out dated software and hardware therefore it makes sense to make websites for computers with older specification but that shouldn’t prevent the web developer from trying new functionalities, just as long as it’s done in moderation.</article>
+	</section>
+	</div>
+</body>
+</html>
