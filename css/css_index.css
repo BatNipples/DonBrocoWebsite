@@ -1,8 +1,13 @@
+* {
+	box-sizing:border-box;
+	font-weight:bold;
+}
+
 body {
 	background-color:black;
 	margin:0;
 	padding:0;
-	color:white;
+	color:black;
 	font-size:16px;
 	font-family: 'Ubuntu',sans-serif;
 	
@@ -42,6 +47,11 @@ body {
 	line-height:3em;
 	border-right:solid 5px black;
 	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	transition:0.3s;
 }
 
 #mobileButton {
@@ -51,6 +61,7 @@ body {
 	height:3.75em;
 	width:3.75em;
 	float:right;
+	cursor:pointer;
 }
 
 #landingWrapper {
@@ -65,7 +76,6 @@ body {
 	position:relative;
 	top:10%;
 	left:25%;
-	box-sizing:border-box;
 	background-image:url(../images/broco_logo3.png);
 	background-size:100% 100%;
 	background-repeat:no-repeat;
@@ -87,6 +97,8 @@ body {
 
 .album {
 	display:inline-block;
+	color:black;
+	font-weight:bold;
 	width:33%;
 	padding-top:calc((((100vh - 4em)/3) - 1em)/2);
 	padding-bottom:calc((((100vh - 4em)/3) - 1em)/2);
@@ -105,7 +117,6 @@ body {
 #albumVideo, #trackWrapper {
 	display:inline-block;
 	text-align:center;
-	box-sizing:border-box;
 	border:solid 1px black;
 }
 
@@ -126,10 +137,11 @@ body {
 	list-style-type:none;
 }
 .track {
-	box-sizing:border-box;
 	border:solid 1px black;
 	background-color:#424242;
 	padding:1em;
+	color:white;
+	font-weight:normal;
 }
 
 #album1, #album2, #album3 {
@@ -142,8 +154,8 @@ body {
     width:0%;
     position: fixed;
     z-index: 1;
-    left: 0;
-    top: 0;
+    left:0;
+    top:0;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
@@ -152,7 +164,7 @@ body {
 
 #mobileNav-content {
     position: relative;
-    top: 25%;
+    top: 15%;
     width: 100%;
     text-align: center;
     margin-top: 1.875px;
@@ -189,7 +201,6 @@ body {
 	left:5%;
 	top:5%;
 	background-color:white;
-	box-sizing:border-box;
 	border-radius:5em;
 	border:solid 5px black;
 	height:90%;
@@ -204,7 +215,6 @@ body {
 	top:75%;
 	width:20%;
 	line-height:3em;
-	box-sizing:border-box;
 	text-decoration:none;
 	background-color:#424242;
 	border:solid 2px black;
@@ -223,10 +233,9 @@ body {
 	width:70%;
 	height:55%;
 	background-color:white;
-	box-sizing:border-box;
 	border:outset 10px rgba(120,120,120,0.5);
 	background-size:100% 100%;
-	background-image:url(images/brocoStage.png);
+	background-image:url(../images/slideShow1.jpg);
 }
 
 .navDot {
@@ -254,7 +263,6 @@ body {
 	width:80%;
 	height:60%;
 	border:solid 5px black;
-	box-sizing:border-box;
 	background-color:white;
 }
 
@@ -266,23 +274,17 @@ body {
 	height:4em;
 	background-color:white;
 	border:solid 5px black;
-	box-sizing:border-box;
 }
 
 .canvasInput {
 	display:inline-block;
 	position:relative;
 	color:black;
-	box-sizing:border-box;
 	border-right:solid 5px black;
 	line-height:3.65em;
 }
 
-#reportWrapper {
-	width:100%;
-	height:100vh;
-	text-align:center;
-}
+
 
 #reportVideo {
 	position:relative;
@@ -295,7 +297,6 @@ body {
 #webStandards {
 	position:relative;
 	top:3%;
-	box-sizing:border-box;
 	border:solid 3px black;
 	margin:auto;
 	width:80%;
@@ -312,7 +313,10 @@ body {
 	height:60%;
 }
 
-
+#twitter-widget-0 {
+	width:50% !important;
+	height:100vh !important;
+}
 
 @media only screen and (max-width: 1344px) {
 	#siteWrapper {
@@ -371,6 +375,7 @@ body {
 
 .navDot:hover {
 	background-color:#ffcb5b;
+	cursor:pointer;
 }
 
 .track:hover {
@@ -396,4 +401,9 @@ body {
 
 .album:hover {
 	cursor:pointer;
+	color:white;
 }
+
+.navOption:hover {
+	color:white;
+]
